@@ -2,7 +2,9 @@ import pytesseract
 from PIL import Image
 
 # Open an image file
-img = Image.open('./superC.png')
+img = Image.open('./mango.png')
+if img:
+  print(img)
 
 # Use pytesseract to extract text
 text = pytesseract.image_to_string(img)
